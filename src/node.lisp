@@ -117,7 +117,14 @@
        (return-from expand-defnode-parameters
                     `(cl:apply #'cl:list ,@(nreverse result))))
       (t
-       (push (resolve-defnode-parameter item) result)))))
+       (push (cond
+               ((typep item 'number)
+                (intern-value-node (make-value-node item)))
+               ((typep item 'boolean)
+                (intern-value-node (make-value-node (if item 1 0))))
+               (t
+                item))
+             result)))))
 
 (defun defnode-impl (id parameters &key (name (error "Missing 'name' argument."))
                                            ((:documentation doc) ""))
