@@ -1,141 +1,143 @@
 (in-package cc.aquarne.sonolisp/nodes)
 
 (defnode + (&rest expr)
-  :name "Add"
+  :func "Add"
   :documentation "Adds multiple expressions from first to last.")
 
 (defnode - (&rest expr)
-  :name "Subtract"
+  :func "Subtract"
   :documentation "Subtracts multiple expressions from first to last.")
 
 (defnode * (&rest expr)
-  :name "Multiply"
+  :func "Multiply"
   :documentation "Multiplies multiple expressions from first to last.")
 
 (defnode / (&rest expr)
-  :name "Divide"
-  :documentation "Divides multiple expressions from first to last.")
+  :func "Divide"
+  :documentation "Divides multiple expressions from first to last."
+  :check (:if (cl:notany #'cl:zerop expr)
+          :on-fail "There must not be any division by zero!"))
 
 (defnode mod (&rest expr)
-  :name "Mod"
+  :func "Mod"
   :documentation "Evaluates the modulus of multiple expressions from first to last.")
 
 (defnode pow (&rest expr)
-  :name "Power"
+  :func "Power"
   :documentation "Exponentiates multiple expressions from first to last.")
 
 (defnode log (expr)
-  :name "Log"
+  :func "Log"
   :documentation "Calculates the natural logarithm of an expression.")
 
 (defnode degree (expr)
-  :name "Degree"
+  :func "Degree"
   :documentation "Converts an expression from radians to degrees.")
 
 (defnode radian (expr)
-  :name "Radian"
+  :func "Radian"
   :documentation "Converts an expression from degrees to radians.")
 
 (defnode abs (expr)
-  :name "Abs"
+  :func "Abs"
   :documentation "Gets the absolute value of an expression.")
 
 (defnode max (a b)
-  :name "Max"
+  :func "Max"
   :documentation "Gets the greater value between two expressions.")
 
 (defnode min (a b)
-  :name "Min"
+  :func "Min"
   :documentation "Gets the lesser value between two expressions.")
 
 (defnode sign (expr)
-  :name "Sign"
+  :func "Sign"
   :documentation "Gets the sign of an expression.")
 
 (defnode frac (expr)
-  :name "Frac"
+  :func "Frac"
   :documentation "Gets the fractional part of an expression.")
 
 (defnode trunc (expr)
-  :name "Trunc"
+  :func "Trunc"
   :documentation "Gets the integer part of an expression.")
 
 (defnode cos (expr)
-  :name "Cos"
+  :func "Cos"
   :documentation "Calculates the cos of an expression.")
 
 (defnode sin (expr)
-  :name "Sin"
+  :func "Sin"
   :documentation "Calculates the sin of an expression.")
 
 (defnode tan (expr)
-  :name "Tan"
+  :func "Tan"
   :documentation "Calculates the tan of an expression.")
 
 (defnode cosh (expr)
-  :name "Cosh"
+  :func "Cosh"
   :documentation "Calculates the hyperbolic cos of an expression.")
 
 (defnode sinh (expr)
-  :name "Sinh"
+  :func "Sinh"
   :documentation "Calculates the hyperbolic sin of an expression.")
 
 (defnode tanh (expr)
-  :name "Tanh"
+  :func "Tanh"
   :documentation "Calculates the hyperbolic tan of an expression.")
 
 (defnode acos (expr)
-  :name "Arccos"
+  :func "Arccos"
   :documentation "Calculates the arccos of an expression.")
 
 (defnode asin (expr)
-  :name "Arcsin"
+  :func "Arcsin"
   :documentation "Calculates the arcsin of an expression.")
 
 (defnode atan (expr)
-  :name "Arctan"
+  :func "Arctan"
   :documentation "Calculates the arctan of an expression.")
 
 (defnode atan2 (expr)
-  :name "Arctan2"
+  :func "Arctan2"
   :documentation "Calculates the y/x arctan of an expression.")
 
 (defnode ceil (expr)
-  :name "Ceil"
+  :func "Ceil"
   :documentation "Rounds an expression to the nearest greater integer.")
 
 (defnode floor (expr)
-  :name "Floor"
+  :func "Floor"
   :documentation "Rounds an expression to the nearest smaller integer.")
 
 (defnode round (expr)
-  :name "Round"
+  :func "Round"
   :documentation "Rounds an expression to the nearest integer.")
 
 (defnode clamp (expr min max)
-  :name "Clamp"
+  :func "Clamp"
   :documentation "Clamps an expression between a min and max value.")
 
 (defnode remap (from-mix from-max to-min to-max expr)
-  :name "Remap"
+  :func "Remap"
   :documentation "Remaps an expression from one range to another.")
 
 (defnode lerp (min max expr)
-  :name "Lerp"
+  :func "Lerp"
   :documentation "Linearly interpolates an expression between a min and max value.")
 
 (defnode lerp* (min max expr)
-  :name "LerpClamped"
+  :func "LerpClamped"
   :documentation "Linearly interpolates and clamps an expression between a min and max value.")
 
 (defnode unlerp (min max expr)
-  :name "Unlerp"
+  :func "Unlerp"
   :documentation "Linearly interpolates an expression inversely between a min and max value.")
 
 (defnode unlerp* (min max expr)
-  :name "UnlerpClamped"
+  :func "UnlerpClamped"
   :documentation "Linearly interpolates and clamps an expression inversely between a min and max value.")
 
 (defnode smooth (min max expr)
-  :name "Smoothstep"
+  :func "Smoothstep"
   :documentation "Smoothly interpolates an expression between a min and max value.")

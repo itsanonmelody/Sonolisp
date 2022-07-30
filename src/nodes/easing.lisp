@@ -1,145 +1,145 @@
 (in-package :cc.aquarne.sonolisp/nodes)
 
 (defnode ease-in-sine (x)
-  :name "EaseInSine"
+  :func "EaseInSine"
   :documentation "https://easings.net/#easeInSine")
 
 (defnode ease-out-sine (x)
-  :name "EaseOutSine"
+  :func "EaseOutSine"
   :documentation "https://easings.net/#easeOutSine")
 
 (defnode ease-inout-sine (x)
-  :name "EaseInOutSine"
+  :func "EaseInOutSine"
   :documentation "https://easings.net/#easeInOutSine")
 
 (defnode ease-outin-sine (x)
-  :name "EaseOutInSine"
+  :func "EaseOutInSine"
   :documentation "https://easings.net/#easeOutInSine")
 
 (defnode ease-in-quad (x)
-  :name "EaseInQuad"
+  :func "EaseInQuad"
   :documentation "https://easings.net/#easeInQuad")
 
 (defnode ease-out-quad (x)
-  :name "EaseOutQuad"
+  :func "EaseOutQuad"
   :documentation "https://easings.net/#easeOutQuad")
 
 (defnode ease-inout-quad (x)
-  :name "EaseInOutQuad"
+  :func "EaseInOutQuad"
   :documentation "https://easings.net/#easeInOutQuad")
 
 (defnode ease-outin-quad (x)
-  :name "EaseOutInQuad"
+  :func "EaseOutInQuad"
   :documentation "https://easings.net/#easeOutInQuad")
 
 (defnode ease-in-cubic (x)
-  :name "EaseInCubic"
+  :func "EaseInCubic"
   :documentation "https://easings.net/#easeInCubic")
 
 (defnode ease-out-cubic (x)
-  :name "EaseOutCubic"
+  :func "EaseOutCubic"
   :documentation "https://easings.net/#easeOutCubic")
 
 (defnode ease-inout-cubic (x)
-  :name "EaseInOutCubic"
+  :func "EaseInOutCubic"
   :documentation "https://easings.net/#easeInOutCubic")
 
 (defnode ease-outin-cubic (x)
-  :name "EaseOutInCubic"
+  :func "EaseOutInCubic"
   :documentation "https://easings.net/#easeOutInCubic")
 
 (defnode ease-in-quart (x)
-  :name "EaseInQuart"
+  :func "EaseInQuart"
   :documentation "https://easings.net/#easeInQuart")
 
 (defnode ease-out-quart (x)
-  :name "EaseOutQuart"
+  :func "EaseOutQuart"
   :documentation "https://easings.net/#easeOutQuart")
 
 (defnode ease-inout-quart (x)
-  :name "EaseInOutQuart"
+  :func "EaseInOutQuart"
   :documentation "https://easings.net/#easeInOutQuart")
 
 (defnode ease-outin-quart (x)
-  :name "EaseOutInQuart"
+  :func "EaseOutInQuart"
   :documentation "https://easings.net/#easeOutInQuart")
 
 (defnode ease-in-quint (x)
-  :name "EaseInQuint"
+  :func "EaseInQuint"
   :documentation "https://easings.net/#easeInQuint")
 
 (defnode ease-out-quint (x)
-  :name "EaseOutQuint"
+  :func "EaseOutQuint"
   :documentation "https://easings.net/#easeOutQuint")
 
 (defnode ease-inout-quint (x)
-  :name "EaseInOutQuint"
+  :func "EaseInOutQuint"
   :documentation "https://easings.net/#easeInOutQuint")
 
 (defnode ease-outin-quint (x)
-  :name "EaseOutInQuint"
+  :func "EaseOutInQuint"
   :documentation "https://easings.net/#easeOutInQuint")
 
 (defnode ease-in-expo (x)
-  :name "EaseInExpo"
+  :func "EaseInExpo"
   :documentation "https://easings.net/#easeInExpo")
 
 (defnode ease-out-expo (x)
-  :name "EaseOutExpo"
+  :func "EaseOutExpo"
   :documentation "https://easings.net/#easeOutExpo")
 
 (defnode ease-inout-expo (x)
-  :name "EaseInOutExpo"
+  :func "EaseInOutExpo"
   :documentation "https://easings.net/#easeInOutExpo")
 
 (defnode ease-outin-expo (x)
-  :name "EaseOutInExpo"
+  :func "EaseOutInExpo"
   :documentation "https://easings.net/#easeOutInExpo")
 
 (defnode ease-in-circ (x)
-  :name "EaseInCirc"
+  :func "EaseInCirc"
   :documentation "https://easings.net/#easeInCirc")
 
 (defnode ease-out-circ (x)
-  :name "EaseOutCirc"
+  :func "EaseOutCirc"
   :documentation "https://easings.net/#easeOutCirc")
 
 (defnode ease-inout-circ (x)
-  :name "EaseInOutCirc"
+  :func "EaseInOutCirc"
   :documentation "https://easings.net/#easeInOutCirc")
 
 (defnode ease-outin-circ (x)
-  :name "EaseOutInCirc"
+  :func "EaseOutInCirc"
   :documentation "https://easings.net/#easeOutInCirc")
 
 (defnode ease-in-back (x)
-  :name "EaseInBack"
+  :func "EaseInBack"
   :documentation "https://easings.net/#easeInBack")
 
 (defnode ease-out-back (x)
-  :name "EaseOutBack"
+  :func "EaseOutBack"
   :documentation "https://easings.net/#easeOutBack")
 
 (defnode ease-inout-back (x)
-  :name "EaseInOutBack"
+  :func "EaseInOutBack"
   :documentation "https://easings.net/#easeInOutBack")
 
 (defnode ease-outin-back (x)
-  :name "EaseOutInBack"
+  :func "EaseOutInBack"
   :documentation "https://easings.net/#easeOutInBack")
 
 (defnode ease-in-elastic (x)
-  :name "EaseInElastic"
+  :func "EaseInElastic"
   :documentation "https://easings.net/#easeInElastic")
 
 (defnode ease-out-elastic (x)
-  :name "EaseOutElastic"
+  :func "EaseOutElastic"
   :documentation "https://easings.net/#easeOutElastic")
 
 (defnode ease-inout-elastic (x)
-  :name "EaseInOutElastic"
+  :func "EaseInOutElastic"
   :documentation "https://easings.net/#easeInOutElastic")
 
 (defnode ease-outin-elastic (x)
-  :name "EaseOutInElastic"
+  :func "EaseOutInElastic"
   :documentation "https://easings.net/#easeOutInElastic")

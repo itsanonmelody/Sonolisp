@@ -10,10 +10,18 @@
   (:import-from :common-lisp
                 :nil
                 :t
+                :&allow-other-keys
+                :&aux
+                :&key
+                :&optional
                 :&rest
                 :defmacro)
   (:export :nil
            :t
+           :&allow-other-keys
+           :&aux
+           :&key
+           :&optional
            :&rest
            :defmacro)
   ;; node.lisp
